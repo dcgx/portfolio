@@ -1,0 +1,31 @@
+{
+  "name": "cardodev",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "sass": "^1.50.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5",
+    "postcss": "^8.4.12",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.1.0",
+    "postcss-preset-env": "^7.4.3",
+    "precss": "^4.0.0",
+    "prop-types": "^15.8.1",
+    "tailwindcss": "^3.0.24"
+  }
+}
