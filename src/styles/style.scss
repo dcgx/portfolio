@@ -30,6 +30,10 @@ h2 {
   font-size: 3rem;
 }
 
+p {
+  color: rgb(75 85 99 / 1);
+}
+
 li.skill::before {
   content: '▹';
   top: 5px;
@@ -66,7 +70,37 @@ li.skill::before {
   }
 }
 
-/***/
+a.socialLink {
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+  }
+  svg {
+    fill: rgb(30 58 138 / var(--tw-text-opacity));
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.general-ring-state {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(30 41 59 / var(--tw-ring-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+
+  &:hover {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)
+      var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width))
+      var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-offset-width: 4px;
+    --tw-ring-offset-color: #fff;
+  }
+}
+
+/*********/
 
 .articles {
   max-width: 1120px;
