@@ -1,0 +1,40 @@
+import { socialMedia } from '@config'
+import { Side } from '@components'
+import { Icon } from '@icons'
+
+const Social = () => {
+  return (
+    <Side>
+      <ul className="flex flex-col items-center m-0 p-0 list-none ">
+        {socialMedia &&
+          socialMedia.map(({ url, name }) => (
+            <li className="p-3 " key={name}>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                className="socialLink"
+                href={url}
+                aria-label={name}
+              >
+                <Icon name={name} />
+              </a>
+            </li>
+          ))}
+      </ul>
+    </Side>
+    // <Side isHome={isHome} orientation="left">
+    //   <StyledSocialList>
+    //     {socialMedia &&
+    //       socialMedia.map(({ url, name }) => (
+    //         <li key={name}>
+    //           <a rel="noreferrer" target="_blank" href={url} aria-label={name}>
+    //             <Icon name={name} />
+    //           </a>
+    //         </li>
+    //       ))}
+    //   </StyledSocialList>
+    // </Side>
+  )
+}
+
+export default Social

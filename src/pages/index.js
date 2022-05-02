@@ -13,15 +13,13 @@ export default function Home({ projects }) {
   )
 }
 
-// export async function getStaticProps() {
-//   const res = await fetch('http://localhost:3000/api/projects');
-//   const projects = await res.json();
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/api/projects')
+  const projects = await res.json()
 
-//   console.log({ projects });
-
-//   return {
-//     props: {
-//       projects: projects,
-//     },
-//   };
-// }
+  return {
+    props: {
+      projects: projects
+    }
+  }
+}
