@@ -6,10 +6,10 @@ const About = () => {
   const { theme } = useTheme()
 
   return (
-    <section className="dark:bg-gray-800">
+    <section className="dark:bg-gray-800 py-10">
       <div className="max-w-screen-xl mx-auto">
         <div className=" grid grid-cols-3 gap-10">
-          <div class="rounded-xl bg-violet-100 py-7 text-center shadow-md dark:bg-gray-900 dark:text-white">
+          <div class="rounded-xl bg-violet-100 py-7 text-center shadow-sm shadow-purple-900  dark:bg-gray-900 dark:text-white">
             <div className="flex justify-center mb-2">
               <MdWorkspaces size={40} color={theme === 'light' ? '#4c1d95' : '#fff'} />
             </div>

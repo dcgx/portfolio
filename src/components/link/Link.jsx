@@ -2,10 +2,10 @@ import NextLink from 'next/link'
 
 const Link = ({ children, className, href, outlined, rounded }) => {
   let classNames =
-    'bg-violet-800 border-2 border-violet-800 hover:bg-violet-900 hover:border-violet-900 text-white'
+    'bg-purple-700 border-2 border-purple-700 hover:bg-purple-700 hover:border-purple-700 text-white'
   if (outlined) {
     classNames =
-      'bg-white border-2 border-violet-800 hover:border-violet-900 text-black dark:border-none'
+      'bg-white border-2 border-purple-700 hover:border-purple-700 text-black dark:border-none'
   }
 
   return (

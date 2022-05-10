@@ -4,7 +4,7 @@ import { Link } from '@components'
 
 const Hero = () => {
   return (
-    <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-800">
+    <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-900">
       <main className="w-full bg-red">
         <div className="text-center">
           <h2 className="text-2xl font-semibold font-sans flex items-center justify-center mb-10 text-gray-800 dark:text-gray-100">

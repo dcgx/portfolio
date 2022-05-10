@@ -29,7 +29,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav class="w-screen px-10 flex justify-around items-center py-5 fixed top-0 backdrop-blur-xl z-50 dark:bg-gray-800">
+    <nav class="w-screen px-10 flex justify-around items-center py-5 fixed top-0 backdrop-blur-xl z-50 dark:bg-gray-900">
       <div className="flex-1">
         <a
           class="font-extrabold text-dark text-2xl hover:border-b-2  border-b-2 border-b-transparent text-violet-800 hover:text-violet-800 dark:text-white"
