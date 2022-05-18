@@ -41,12 +41,10 @@ const Hero = () => {
             Full Stack Developer
           </p>
           <div className="mt-20">
-            <Link href="/" outlined>
-              Descargar CV
-            </Link>
-            <Link href="/" className="ml-10">
+            <Link href="/">Descargar CV</Link>
+            {/* <Link href="/" className="ml-10">
               Sobre Mí
-            </Link>
+            </Link> */}
           </div>
         </div>
       </main>

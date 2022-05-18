@@ -32,10 +32,16 @@ const Navbar = () => {
     <nav class="w-screen px-10 flex justify-around items-center py-5 fixed top-0 backdrop-blur-xl z-50 dark:bg-gray-900">
       <div className="flex-1">
         <a
-          class="font-extrabold text-dark text-2xl hover:border-b-2  border-b-2 border-b-transparent text-violet-800 hover:text-violet-800 dark:text-white"
+          class="logo font-extrabold flex items-center text-dark text-2xl hover:border-b-2  border-b-2 border-b-transparent dark:text-white"
           href="/"
         >
-          dcgx.dev
+          <img
+            className="mr-4"
+            src="https://www.kevincollazos.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.51835898.png&w=48&q=75"
+            style={{ width: '35px' }}
+            alt=""
+          />
+          dcgx.
         </a>
       </div>
 
@@ -154,9 +160,9 @@ const Navbar = () => {
             <img src="/uk.png" width={40} alt="" />
           )}
         </button>
-        <Link href="/contact" outlined rounded>
+        {/* <Link href="/contact" outlined rounded>
           Dime Hola!
-        </Link>
+        </Link> */}
         {/* <a
           href="/contact"
           className="font-sans py-2 px-6 font-medium rounded-full inline-block bg-white border-2 border-violet-800 select-none hover:border-violet-900 hover:bg-violet-900 hover:text-white hover:font-semibold text-black"

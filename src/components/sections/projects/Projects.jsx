@@ -13,7 +13,7 @@ const Projects = () => {
         <div className="grid grid-cols-3 gap-8">
           {projects.map((project) => {
             return (
-              <div className="project bg-white border rounded-2xl">
+              <div className="project bg-white border rounded-2xl dark:bg-gray-800 dark:border-none">
                 <div className="p-5">
                   <div>
                     <div className="grid grid-cols-2">
@@ -36,7 +36,9 @@ const Projects = () => {
                     </div>
 
                     <h4 className="font-semibold text-lg mt-5 mb-1">{project.name}</h4>
-                    <p className="project-description">{project.description}</p>
+                    <p className="project-description dark:text-gray-50 mb-3">
+                      {project.description}
+                    </p>
                   </div>
                   <div>
                     <ul className="flex flex-wrap gap-2">

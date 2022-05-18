@@ -2,18 +2,18 @@ import React from 'react'
 
 const Jobs = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="dark:bg-gray-900">
       <section className="max-w-screen-xl mx-auto py-28 ">
         <h3 className="text-center font-sans font-bold text-xl text-purple-800 mb-3">
           Where I´have worked.
         </h3>
-        <h2 className="text-center font-bold text-gray-100 mb-14">Experience</h2>
+        <h2 className="text-center font-bold mb-14 dark:text-gray-100">Experience</h2>
 
         <div className="w-full relative job-wrapper">
           <div className="flex justify-start px-28 ">
             {/* rounded-xl bg-violet-100 py-7 text-center shadow-sm shadow-purple-900 dark:bg-gray-900 */}
             {/* dark:text-white */}
-            <div className="shadow-sm shadow-purple-900 dark:bg-gray-800 rounded-md max-w-md left-0 p-6  m-5">
+            <div className="border border-purple-800 dark:bg-gray-800 rounded-md max-w-md left-0 p-6  m-5">
               <h2 className="font-sans font-bold text-2xl">Junior Full stack developer</h2>
               <a
                 href="http://pckz.cl/"

@@ -6,23 +6,23 @@ const Featured = () => {
       <div className="max-w-screen-xl mx-auto">
         <h2 className="text-center py-14">Some Things I’ve Built</h2>
 
-        <div className="grid grid-cols-2 gap-8 mt-28">
+        <div className="grid grid-cols-2 gap-8 mt-28 bg-gray-50 py-10 px-20 rounded-lg ">
           <div className="mx-5">
             <h4 className="text-lg font-semibold">PROJECT - #001</h4>
             <h3 className="font-extrabold text-4xl my-4">Ambar.pet</h3>
             <div className="flex flex-wrap mb-4">
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4">
+              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 Vue
               </span>
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4">
+              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 PWA
               </span>
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4">
+              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 Bootstrap
               </span>
             </div>
 
-            <p>
+            <p className="dark:text-gray-50">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, atque veniam quas
               ducimus voluptate, nesciunt accusantium omnis amet nam adipisci minus? Eveniet aperiam
               ducimus culpa, vitae consectetur odit fugiat minima!
@@ -34,9 +34,9 @@ const Featured = () => {
           </div>
 
           <div className="flex items-center">
-            <a href="" className="w-100">
+            {/* <a href="" className="w-100">
               <img src="/ambar-pet.png" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Button = ({ children, className, outlined }) => {
 
   return (
     <div style={{ display: 'inline-block' }} className={className}>
-      <button className={`font-sans py-4 px-6 font-medium rounded-xl ${classNames}`}>
+      <button className={`font-sans py-3 px-6 font-medium rounded-xl ${classNames}`}>
         {children}
       </button>
     </div>
