@@ -8,21 +8,18 @@ export default function Home({ projects }) {
       <Jobs />
       <Featured />
       <Projects />
-      {/* 
-      
-      <*/}
       {/* <Articles /> */}
     </main>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/projects')
-  const projects = await res.json()
+  // const res = await fetch('/api/projects')
+  // const projects = await res.json()
 
   return {
     props: {
-      projects: projects
+      projects: []
     }
   }
 }

@@ -1,7 +1,7 @@
 import { useFetch } from '@hooks'
 
 const useProjects = () => {
-  const { fetching, data } = useFetch('http://localhost:3000/api/projects')
+  const { fetching, data } = useFetch('/api/projects')
 
   return { fetching, projects: data }
 }
