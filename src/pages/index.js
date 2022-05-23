@@ -8,6 +8,9 @@ export default function Home({ projects }) {
       <Jobs />
       <Featured />
       <Projects />
+      {/* 
+      
+      <*/}
       {/* <Articles /> */}
     </main>
   )

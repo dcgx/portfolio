@@ -1,7 +1,8 @@
 export { default as Button } from './button/Button'
 export { default as Link } from './link/Link'
 export { default as Navbar } from './navbar/Navbar'
-export { default as Social } from './social/Social'
+export { default as SocialSide } from './Social/SocialSide'
+export { default as SocialRow } from './Social/SocialRow'
 export { default as Side } from './side/Side'
 export { default as BottomNavigation } from './BottomNavigation/BottomNavigation'
 

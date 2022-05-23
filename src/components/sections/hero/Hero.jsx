@@ -1,11 +1,12 @@
 import styles from './Hero.module.scss'
 
 import { Link } from '@components'
+import SocialRow from '../../Social/SocialRow'
 
 const Hero = () => {
   return (
-    <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-900">
-      <main className="w-full bg-red">
+    <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-5 md:px-0">
+      <main className="bg-red">
         <div className="text-center">
           <h2 className="text-2xl font-semibold font-sans flex items-center justify-center mb-10 text-gray-800 dark:text-gray-100">
             Hola
@@ -40,6 +41,7 @@ const Hero = () => {
           <p className="mt-5 font-light text-4xl md:text-4xl font-sans text-gray-800 dark:text-gray-200">
             Full Stack Developer
           </p>
+          <SocialRow className="block md:hidden" />
           <div className="mt-20">
             <Link href="/">Descargar CV</Link>
             {/* <Link href="/" className="ml-10">

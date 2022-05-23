@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Navbar, Social, BottomNavigation } from '@components'
+import { Navbar, SocialSide, BottomNavigation } from '@components'
 
 const Layout = ({ children }) => {
   return (
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <div id="id">
         <main className="content">
           <Navbar />
-          <Social />
+          <SocialSide />
           <div>
             {children}
             <footer class="w-full p-9">
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
               <p class="text-center text-gray-500 text-md">Diego Castillo</p>
             </footer>
           </div>
-          {/* <BottomNavigation></BottomNavigation> */}
+          <BottomNavigation></BottomNavigation>
         </main>
       </div>
     </>

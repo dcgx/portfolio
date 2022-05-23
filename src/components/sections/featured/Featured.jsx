@@ -23,9 +23,8 @@ const Featured = () => {
             </div>
 
             <p className="dark:text-gray-50">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, atque veniam quas
-              ducimus voluptate, nesciunt accusantium omnis amet nam adipisci minus? Eveniet aperiam
-              ducimus culpa, vitae consectetur odit fugiat minima!
+              Ambar.pet, sistema de administración de mascotas para veterinarios. Proyecto creado
+              con Vue 2 y Bootstrap
             </p>
 
             <Link href="/project/ambar" outlined className="my-6" style={{ margin: '30px' }}>
@@ -34,9 +33,9 @@ const Featured = () => {
           </div>
 
           <div className="flex items-center">
-            {/* <a href="" className="w-100">
-              <img src="/ambar-pet.png" />
-            </a> */}
+            <a href="" className="w-100">
+              <img src="https://mockuuups-web.ams3.cdn.digitaloceanspaces.com/web/images/header-iphone-mockups-2.png" />
+            </a>
           </div>
         </div>
       </div>

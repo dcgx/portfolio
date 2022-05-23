@@ -9,7 +9,7 @@ const Jobs = () => {
         </h3>
         <h2 className="text-center font-bold mb-14 dark:text-gray-100">Experience</h2>
 
-        <div className="w-full relative job-wrapper">
+        <div className=" relative job-wrapper">
           <div className="flex justify-start px-28 ">
             {/* rounded-xl bg-violet-100 py-7 text-center shadow-sm shadow-purple-900 dark:bg-gray-900 */}
             {/* dark:text-white */}
