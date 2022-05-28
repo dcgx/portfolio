@@ -2,6 +2,7 @@ import { Button } from '@components'
 import { useTheme } from 'next-themes'
 import { FaUniversity } from 'react-icons/fa'
 import { MdWorkspaces } from 'react-icons/md'
+import { Skill } from '../../Skill/Skill'
 const About = () => {
   const { theme } = useTheme()
 
@@ -9,56 +10,72 @@ const About = () => {
     <section className="dark:bg-gray-900 py-10 px-5 md:px-0">
       <div className="max-w-screen-xl mx-auto ">
         <div className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-10">
-          <div class="bg-slate-100 rounded-xl py-7 text-center shadow-sm dark:bg-gray-900 dark:text-white">
+          <div className="bg-gray-50 rounded-lg py-7 text-center shadow-sm border border-zinc-100 dark:bg-gray-900 dark:text-white">
             <div className="flex justify-center mb-2">
-              <MdWorkspaces size={40} color={theme === 'light' ? '#4c1d95' : '#fff'} />
+              <MdWorkspaces size={40} color={theme === 'light' ? '#4c1d95' : '#fff'}></MdWorkspaces>
             </div>
-            <p class="font-bold text-zinc-800 text-lg dark:text-white">Experiencia</p>
-            <p class="font-light text-sm text-zinc-700 dark:text-white mb-1">+2 Años</p>
+            <p className="font-bold text-zinc-800 text-1xl dark:text-white">Experiencia</p>
+            <p className="text-md text-gray-900 font-normal dark:text-white mb-1">+1 Años</p>
           </div>
 
-          <div class="bg-zinc-100 rounded-xl py-7 text-center shadow-sm dark:bg-gray-900 dark:text-white">
+          <div className="bg-gray-50 rounded-lg py-7 text-center shadow-sm border border-zinc-100 dark:bg-gray-900 dark:text-white">
             <div className="flex justify-center mb-2">
-              <MdWorkspaces size={40} color={theme === 'light' ? '#4c1d95' : '#fff'} />
+              <MdWorkspaces size={40} color={theme === 'light' ? '#4c1d95' : '#fff'}></MdWorkspaces>
             </div>
-            <p class="font-bold text-gray-800 text-lg dark:text-white">Proyectos completados</p>
-            <p class="font-light text-sm text-gray-700 dark:text-white mb-1">+2 proyectos</p>
+            <p className="font-bold text-zinc-800 text-1xl dark:text-white">
+              Proyectos completados
+            </p>
+            <p className="text-md text-gray-900 font-normal dark:text-white mb-1">+4 proyectos</p>
           </div>
 
-          <div class="bg-zinc-100 rounded-xl py-7 text-center shadow-sm dark:bg-gray-900 dark:text-white col-span-2 md:col-span-1">
+          <div className="bg-gray-50 rounded-lg py-7 text-center shadow-sm border border-zinc-100 dark:bg-gray-900 dark:text-white col-span-2 md:col-span-1">
             <div className="flex justify-center mb-2">
-              <FaUniversity size={35} color={theme === 'light' ? '#4c1d95' : '#fff'} />
+              <FaUniversity size={35} color={theme === 'light' ? '#4c1d95' : '#fff'}></FaUniversity>
             </div>
-            <p class="font-bold text-gray-800 text-lg dark:text-white">Universidad</p>
-            <p class="font-light text-sm text-gray-700 dark:text-white mb-1">
-              Técnico Universitario en Informática
+            <p className="font-bold text-zinc-800 text-1xl dark:text-white">
+              Universidad Técnica Federico Santa María
+            </p>
+            <p className="text-md text-gray-900 font-normal dark:text-white mb-1">
+              Tecnica Universitario en Informática
             </p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center my-10">
-          {/* <img
-            className="m-0 mb-5 md:mr-10 md:mb-0"
-            src="https://miro.medium.com/max/392/0*ipiN42L-4hqvIPBv.jpg"
-            width={250}
-          /> */}
-
           <img
             className="mb-10 block md:hidden"
             src="/emoji.png"
             style={{ width: '45px' }}
             alt=""
-          />
+          ></img>
           <div className="w-full md:w-6/12">
             <p className="font-sans font-light text-lg mb-4 md:mb-14 text-gray-900 dark:text-gray-300">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ducimus facilis
-              molestias rerum, sit animi vitae error deserunt, magnam, voluptatem sequi pariatur
-              reiciendis incidunt molestiae quibusdam saepe placeat. Nisi, fuga!
+              Soy un desarrollador de software especializado en construir excepcionales sitios web y
+              con más de <strong>1 año de experiencia</strong> agregando valor a los procesos de
+              negocios. Principalmente enfocado en el desarrollo web como Full-stack developer, me
+              inicié con Laravel y Vue.js y aún sigo con estas tecnologías. <br /> Tengo
+              conocimiento en HTML, CSS, JavaScript, Bootstrap, Tailwind React, Node.js y Flutter
             </p>
             <ul className="grid grid-cols-2">
-              <li className="skill">JavaScript (ES6+)</li>
-              <li className="skill">PHP</li>
-              <li className="skill">Vue.js</li>
-              <li className="skill">Laravel</li>
+              <Skill
+                image="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                name="JavaScript (ES6+)"
+              ></Skill>
+              <Skill
+                image="http://assets.stickpng.com/thumbs/58481791cef1014c0b5e4994.png"
+                name="PHP"
+              ></Skill>
+              <Skill
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
+                name="Vue.js"
+              ></Skill>
+              <Skill
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+                name="Laravel"
+              ></Skill>
+              <Skill
+                image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAt1BMVEX///9B0P1A0P0JWp0fvP0OUZkszf36/v8AU5pa1f3b9v6IosSV4v4Auf153P5x2/4AVpscv/8fwv/m+P/w+/9J0v0PSZK26/6l5/71/f981P4PSpMATpdU1P3N8f+/7v6H3/6U2/5sz/5Xyf00puEkltXj7PMejc2btdFkj7rL8f6d5f6D1v5Jzf1v0P4/xv3N2+gZYqHm7fQmaKQ6c6uazOoAP45BeK2Rr81OgLKlvdZnkby5y94p6fsnAAAE00lEQVR4nO3dCVvaQBAG4BDDWQ8Ih1LBo9Vqta09bbX+/99VQtASyO5OJsSdGeb7ATz7PvMthCxHEGg0Go1Go9FoNBqNhkma+PheOiy70zYu0/bA99pB2W3UcAnDvu+1g6JAI3AoHSh+ggqkkRLAju+1g4IG1qQDtaJEohU1+hrCgeInKB4o/klG9yCRlKjoie+1g1KiouKBWlESUaARKH8PSgeGN77XDkqJCYoHakVJRCuqQOIpATz1vXZQFKhA4lGgAomnBPDQ99pBUaACiUeBCiQeBZqBR77XDgr++Ew6UPwExQPFV1Q8UHxFxQPFV7TWuPW9dlBKVFQ4UPwEtwC463vtoOgEt3iCCiQRBW4x8Mz32kFRoBmoFSURBSqQeBSoQOIpAdz3vXZQFKhA4lGgAolHgWbgge+1g6JAM3CfxS+rlZmgeKD1gccddDb6i3TVAacNbDZajcoqOmiHyGz22as64JQ/0PrAgyEauNEriOomKAA4tj1wHw+kUtG2dYL9Go0JdhphNcAO1rdhYBCcIomNtrWidIBBcIgihpUBK7iKxxAdFT0hNEEc0VHRkwYtYEIsBnRUtMQEK3ujeVRoig7gDUFgMWJo34M35Cqa5hZcVMcET4kC4cRwan1jWgJY+c0e2OVbOLVO8JDsBKFE1kAI0VHREsBXuh955iCGQ+ZAFzEcWit6RLyiaWxER0V5AINg30h0AM9j7Fv61z4TODAQHXvwfC9CEl//0CN/ig7gp70oimLMfQsP53LNvCk6/lHjPAFGUa/4FP0cPK4TYUAE0de5XLuxCnRXdEEsVlRvR8crRYUDZylC9Hg2Pm6H4IpmgUWIXo+Om9MXouMPJ1aBUfSZA3BpimForejbNSCU6P3jG4OU6KhoHhBG9A6cn/05K5oPhBBJfHxjfjiGArqJBCaYZEa0Ar8YgS4iEWAQ9K2/BW8DRtGd5fKGDNAeO9BGJLEH3XnnAEZ7d4bXfiYTdAKNRDlAA1FKRRdZJzIBvgcC14mSKrpI9uaNQGCWKK6iq0QmEywK/H/zhgewWRz4TOQBREzwmchkD96hgLMw+ULGGDfB+RR5THAQY4W9i52vvlcPyhhJnAG7XSZE1EacAWeZ8CAOEFsxBe7siJ1i76K7EDLZi82CxOcJJkQmUyx2WbMEnBFbH3yvHpQixAyQT1HhlzYrwBnxG48pQi9P14DJXuRBhBU1XgcmReVBhEwxvuzmCAUVNb48rvMmOm7XxJejet1A5FJUKzEFmogCpphUNE0rn/jd9+JhMR4/9RYT5E80HALHS0BjUZkQc6eYBZqIP/gS46vjejb5ReVCXCtq72pUhwj5FHXlQ1HxKrCVW9J0ihv91YTqkpniyh4085K0fvKbYmaCdt6cyGWKL8QlYNfJS4nWLzjQyeJDwi9AGC8tKpMpzokLoLucWSKLX7dJv42QAIvxeBGjq1FxHivir3sMb078zYT451g88XqCJnIp6vUWTHGEJj5wIeKLymaKJYi+1w4Mvqj1B99rB6bMXvS9dmAe0UVlM0U8kc8U8Xvxo++1A/OIf+lnQ6zrFI2ZsCHi9+Jf32sHBv+MymeK8olP6KJO2BQV/3TDhfiEftHgQ5y0kLlnQ3yDDpOPwGk0Go1Go9FoNBoNg/wD3zy1H66aaH0AAAAASUVORK5CYII="
+                name="Flutter"
+              ></Skill>
             </ul>
 
             <div className="text-center">

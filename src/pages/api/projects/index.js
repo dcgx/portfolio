@@ -1,7 +1,17 @@
 const projects = [
   {
+    id: 3,
+    name: 'Portolio | dcgx.dev',
+    description:
+      'Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit',
+    repositoryProvider: 'GitLab',
+    repositoryUrl: 'https://gitlab.com/nubbok/nubbok',
+    url: 'http://nubbok.com/',
+    techs: ['Vue', 'Nuxt.js', 'SSR']
+  },
+  {
     id: 1,
-    name: 'EduLingo',
+    name: 'Portal Smarthomy',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     repositoryProvider: 'GitHub',
@@ -11,7 +21,7 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Petgram',
+    name: 'Meetwi | Google Meet Clone',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     repositoryProvider: 'GitHub',
@@ -21,7 +31,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Nubbok',
+    name: 'TriviLingo | Duolingo Inspired',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit Lorem, ipsum dolor sit amet consectetur adipisicing elit',
     repositoryProvider: 'GitLab',

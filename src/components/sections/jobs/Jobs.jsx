@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Jobs = () => {
   return (
@@ -9,7 +10,12 @@ const Jobs = () => {
         </h3>
         <h2 className="text-center font-bold mb-14 dark:text-gray-100">Experience</h2>
 
-        <div className=" relative job-wrapper">
+        <motion.div
+          className=" relative job-wrapper"
+          initial={{ opacity: 0, translateY: 20 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="flex justify-start px-28 ">
             {/* rounded-xl bg-violet-100 py-7 text-center shadow-sm shadow-purple-900 dark:bg-gray-900 */}
             {/* dark:text-white */}
@@ -56,7 +62,7 @@ const Jobs = () => {
               alt=""
             />
           </div>
-        </div>
+        </motion.div>
 
         <div className="w-full relative job-wrapper">
           <div className="flex justify-start px-28">

@@ -1,4 +1,5 @@
 import styles from './Hero.module.scss'
+import { motion } from 'framer-motion'
 
 import { Link } from '@components'
 import SocialRow from '../../Social/SocialRow'
@@ -8,7 +9,12 @@ const Hero = () => {
     <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-5 md:px-0">
       <main className="bg-red">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold font-sans flex items-center justify-center mb-10 text-gray-800 dark:text-gray-100">
+          <motion.h2
+            className="text-2xl font-semibold font-sans flex items-center justify-center mb-10 text-gray-800 dark:text-gray-100"
+            initial={{ opacity: 0, translateY: 20 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             Hola
             <svg
               className="mx-2"
@@ -34,20 +40,30 @@ const Hero = () => {
               </g>
             </svg>
             , mi nombre es
-          </h2>
-          <h1 className="font-extrabold font-sans mt-3 mb-2 text-5xl md:text-7xl text-gray-800 dark:text-gray-100">
+          </motion.h2>
+          <motion.h1
+            className="font-extrabold font-sans mt-3 mb-2 text-5xl md:text-7xl text-gray-800 dark:text-gray-100"
+            initial={{ opacity: 0, translateY: 30 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.4 }}
+          >
             Diego Castillo
-          </h1>
+          </motion.h1>
           <p className="mt-5 font-light text-4xl md:text-4xl font-sans text-gray-800 dark:text-gray-200">
             Full Stack Developer
           </p>
           <SocialRow className="block md:hidden" />
-          <div className="mt-20">
+          <motion.div
+            className="mt-20"
+            initial={{ opacity: 0, translateY: 40 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <Link href="/">Descargar CV</Link>
             {/* <Link href="/" className="ml-10">
               Sobre Mí
             </Link> */}
-          </div>
+          </motion.div>
         </div>
       </main>
     </section>

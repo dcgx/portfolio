@@ -40,8 +40,14 @@ p {
   color: rgb(75 85 99 / 1);
 }
 
+li.skill {
+  display: flex;
+  img {
+    margin-right: 0.5rem;
+  }
+}
 li.skill::before {
-  content: '▹ ';
+  content: '';
   top: 5px;
   left: 0px;
   color: #c4b5fd;

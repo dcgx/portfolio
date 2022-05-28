@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
           <SocialSide />
           <div>
             {children}
-            <footer class="w-full p-9">
+            <footer class="w-full pt-32 pb-10">
               <ul class="flex items-center justify-center py-3 w-100">
                 <li>
                   <a href="https://linkedin.com/in/kewinbarboza" target="_blank">

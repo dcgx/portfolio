@@ -11,13 +11,13 @@ const Featured = () => {
             <h4 className="text-lg font-semibold">PROJECT - #001</h4>
             <h3 className="font-extrabold text-4xl my-4">Ambar.pet</h3>
             <div className="flex flex-wrap mb-4">
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
+              <span className="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 Vue
               </span>
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
+              <span className="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 PWA
               </span>
-              <span class="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
+              <span className="border border-black px-5 py-1 uppercase text-gray-600 font-semibold text-sm mr-4 dark:text-gray-300 dark:border-gray-400">
                 Bootstrap
               </span>
             </div>

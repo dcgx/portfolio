@@ -35,7 +35,7 @@ const Navbar = () => {
           class="logo font-extrabold flex items-center text-dark text-2xl hover:border-b-2  border-b-2 border-b-transparent dark:text-white"
           href="/"
         >
-          <img className="mr-4" src="/emoji.png" style={{ width: '35px' }} alt="" />
+          <img className="mr-4" src="/emoji.png" style={{ width: '35px' }} alt=""></img>
           dcgx.
         </a>
       </div>
@@ -150,9 +150,9 @@ const Navbar = () => {
           onClick={handleSwitchLang}
         >
           {lang === 'es' ? (
-            <img src="/spain.png" width={40} alt="" />
+            <img src="/spain.png" width={40} alt=""></img>
           ) : (
-            <img src="/uk.png" width={40} alt="" />
+            <img src="/uk.png" width={40} alt=""></img>
           )}
         </button>
         {/* <Link href="/contact" outlined rounded>
