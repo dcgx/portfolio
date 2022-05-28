@@ -4,7 +4,10 @@ const Featured = () => {
   return (
     <section className="dark:bg-gray-900">
       <div className="max-w-screen-xl mx-auto">
-        <h2 className="text-center py-14">Some Things I’ve Built</h2>
+        <h2 className="text-center font-sans font-bold text-xl text-purple-800 mb-3">
+          Some Things I’ve Built
+        </h2>
+        <h2 className="text-center font-bold mb-14 dark:text-gray-100">Featured Projects</h2>
 
         <div className="grid grid-cols-2 gap-8 mt-28 bg-gray-50 py-10 px-20 rounded-lg ">
           <div className="mx-5">

@@ -40,13 +40,7 @@ p {
   color: rgb(75 85 99 / 1);
 }
 
-li.skill {
-  display: flex;
-  img {
-    margin-right: 0.5rem;
-  }
-}
-li.skill::before {
+wli.skill::before {
   content: '';
   top: 5px;
   left: 0px;

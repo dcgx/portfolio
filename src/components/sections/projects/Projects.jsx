@@ -10,7 +10,7 @@ const Projects = () => {
     <section className="dark:bg-gray-900 mb-20">
       <div className="max-w-screen-xl mx-auto pb-10">
         <h2 className="text-center py-7">Other projects</h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-3 gap-8 gap-y-44">
           {projects.map((project) => {
             return (
               <div className="project-wrapper relative mt-52 mb-10 cursor-pointer">
@@ -34,7 +34,7 @@ const Projects = () => {
                       <p className="project-description dark:text-gray-50 mb-3">
                         {project.description}
                       </p>
-                      <div className="grid grid-cols-1">
+                      <div className="grid grid-cols-1 ">
                         <div className="project-links flex justify-end">
                           {/* <img
                             width={20}

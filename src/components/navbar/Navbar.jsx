@@ -9,14 +9,15 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme()
 
   const handleSwitchLang = () => {
-    if (lang === 'es') {
-      setLang('en')
-      localStorage.setItem('lang', lang)
-      return
-    }
+    // if (lang === 'es') {
+    //   setLang('en')
+    //   localStorage.setItem('lang', lang)
+    //   return
+    // }
 
-    setLang('es')
-    localStorage.setItem('lang', lang)
+    // setLang('es')
+    // localStorage.setItem('lang', lang)
+    return
   }
 
   const handleSwitchTheme = () => {
@@ -41,13 +42,14 @@ const Navbar = () => {
       </div>
 
       <ul class="md:flex justify-between hidden">
-        <NavbarLink href="/">Inicio</NavbarLink>
+        {/* <NavbarLink href="/">Inicio</NavbarLink>
         <NavbarLink href="/">Sobre Mí</NavbarLink>
         <NavbarLink href="/">Experiencia</NavbarLink>
-        <NavbarLink href="/">Proyectos</NavbarLink>
+        <NavbarLink href="/">Proyectos</NavbarLink> */}
       </ul>
 
-      <div className="flex flex-1 gap-4 justify-end">
+      <div className="flex flex-1 gap-4 justify-end items-center">
+        <small className="text-gray-500 mr-5">2022</small>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -146,7 +148,7 @@ const Navbar = () => {
           )}
         </button>
         <button
-          className="flex items-center justify-center w-12 h-12 bg-white border-none rounded-full dark:bg-midnight general-ring-state select-none"
+          className="cursor-not-allowed flex items-center justify-center w-12 h-12 bg-white  border-none rounded-full dark:bg-midnight general-ring-state select-none"
           onClick={handleSwitchLang}
         >
           {lang === 'es' ? (
@@ -155,15 +157,6 @@ const Navbar = () => {
             <img src="/uk.png" width={40} alt=""></img>
           )}
         </button>
-        {/* <Link href="/contact" outlined rounded>
-          Dime Hola!
-        </Link> */}
-        {/* <a
-          href="/contact"
-          className="font-sans py-2 px-6 font-medium rounded-full inline-block bg-white border-2 border-violet-800 select-none hover:border-violet-900 hover:bg-violet-900 hover:text-white hover:font-semibold text-black"
-        >
-          Dime Hola!
-        </a> */}
       </div>
     </nav>
   )

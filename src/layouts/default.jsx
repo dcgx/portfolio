@@ -58,7 +58,34 @@ const Layout = ({ children }) => {
                   </a>
                 </li>
               </ul>
-              <p class="text-center text-gray-500 text-md">Diego Castillo</p>
+
+              <ul className="flex border items-center justify-center gap-6 uppercase font-semibold ">
+                <li>
+                  <a className="text-body text-xs text-gray-500 hover:text-gray-900" href="/about">
+                    Acerca de mi
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-body text-xs text-gray-500 hover:text-gray-900"
+                    href="https://github.com/dcgx"
+                    target="_target"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-body text-xs text-gray-500 hover:text-gray-900"
+                    href="/pdf/resume.pdf"
+                    target="_blank"
+                  >
+                    Curriculum
+                  </a>
+                </li>
+              </ul>
+
+              <p class="text-center text-gray-500 text-md">@2022 - Diego Castillo</p>
             </footer>
           </div>
           <BottomNavigation></BottomNavigation>
