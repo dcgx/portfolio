@@ -4,10 +4,11 @@ export default function Home({ projects }) {
   return (
     <main>
       <Hero />
-      <About />
       <Jobs />
       <Featured />
-      <Projects />
+      <About />
+
+      {/* <Projects /> */}
       {/* <Articles /> */}
     </main>
   )

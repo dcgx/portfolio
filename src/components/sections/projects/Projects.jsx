@@ -23,8 +23,8 @@ const Projects = () => {
                     left: '0',
                     right: '0'
                   }}
-                  className="rounded shadow-sm object-cover"
-                  src="https://res.cloudinary.com/personal-jaime00/image/upload/v1647122613/projects/shortly/ilustrations/page_preview_npliw4.jpg"
+                  className="rounded border shadow-sm object-cover"
+                  src={project.cover}
                   alt=""
                 />
                 <div className="project absolute bg-white shadow-md rounded-2xl dark:bg-gray-800 dark:border-none">

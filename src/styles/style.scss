@@ -25,9 +25,9 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #555555;
 }
 
-.logo {
-  font-family: 'Indie Flower', cursive;
-}
+// .logo {
+//   font-family: 'Indie Flower', cursive;
+// }
 
 h2 {
   font-weight: 600;
@@ -82,9 +82,9 @@ a.socialLink {
     transform: translateY(-3px);
   }
   svg {
-    fill: rgb(30 58 138 / var(--tw-text-opacity));
-    width: 18px;
-    height: 18px;
+    fill: #3f3f46;
+    width: 36px;
+    height: 36px;
   }
 }
 
@@ -103,6 +103,21 @@ a.socialLink {
     box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
     --tw-ring-offset-width: 4px;
     --tw-ring-offset-color: #fff;
+  }
+}
+
+.logo {
+  div {
+    border: 2px solid #000;
+    font-weight: 600;
+    padding: 1.2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 1999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
   }
 }
 

@@ -6,8 +6,21 @@ import SocialRow from '../../Social/SocialRow'
 
 const Hero = () => {
   return (
-    <section className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-5 md:px-0">
-      <main className="bg-red">
+    <section className="h-screen max-w-7xl mx-auto gap-2 items-center justify-center bg-white dark:bg-gray-900 px-5 md:px-0 grid grid-cols-2">
+      <div>
+        <h1 className="text-6xl font-semibold text-zinc-700">
+          Frontend Developer, Self-taught Developer
+        </h1>
+        <p className="text-2xl mt-5">
+          Hi 👋, I'am Diego, a software engineer and web developer from Chile. I have worked a web
+          developer specialized in frontend for more than 2 years
+        </p>
+        <Link className="mt-4" href="/pdf/resume.pdf" target="_blank">
+          Descargar CV
+        </Link>
+      </div>
+      <div></div>
+      {/* <main className="bg-red">
         <div className="text-center">
           <motion.h2
             className="text-2xl font-semibold font-sans flex items-center justify-center mb-10 text-gray-800 dark:text-gray-100"
@@ -62,12 +75,10 @@ const Hero = () => {
             <Link href="/pdf/resume.pdf" target="_blank">
               Descargar CV
             </Link>
-            {/* <Link href="/" className="ml-10">
-              Sobre Mí
-            </Link> */}
+  
           </motion.div>
         </div>
-      </main>
+      </main> */}
     </section>
   )
 }

@@ -9,7 +9,7 @@ const Jobs = () => {
           Where I´have worked.
         </h3>
         <h2 className="text-center font-bold mb-14 dark:text-gray-100">Experience</h2>
-
+        {/* 
         <motion.div
           className=" relative job-wrapper"
           initial={{ opacity: 0, translateY: 20 }}
@@ -17,8 +17,7 @@ const Jobs = () => {
           transition={{ duration: 0.3 }}
         >
           <div className="flex justify-start px-28 ">
-            {/* rounded-xl bg-violet-100 py-7 text-center shadow-sm shadow-purple-900 dark:bg-gray-900 */}
-            {/* dark:text-white */}
+          
             <div className="border border-purple-800 dark:bg-gray-800 rounded-md max-w-md left-0 p-6  m-5">
               <h2 className="font-sans font-bold text-2xl">Junior Full stack developer</h2>
               <a
@@ -75,7 +74,7 @@ const Jobs = () => {
               alt=""
             />
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   )
