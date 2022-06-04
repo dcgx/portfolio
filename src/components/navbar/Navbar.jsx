@@ -1,7 +1,5 @@
 import { useState } from 'react'
-
-import NavbarLink from './NavbarLink'
-import { Link } from '@components'
+import { Logo } from '@components'
 import { useTheme } from 'next-themes'
 
 const Navbar = () => {
@@ -31,17 +29,7 @@ const Navbar = () => {
 
   return (
     <nav class="w-full px-10 flex justify-around items-center py-5 fixed top-0 backdrop-blur-xl z-50  dark:bg-gray-900">
-      <div className="logo flex items-center flex-1">
-        <div>D</div>
-        {/* <span className="mx-2 text-2xl font-sans font-bold">Diego Castillo</span> */}
-        {/* <a
-          class="logo font-extrabold flex items-center text-dark text-2xl hover:border-b-2  border-b-2 border-b-transparent dark:text-white"
-          href="/"
-        >
-          <img className="mr-4" src="/emoji.png" style={{ width: '35px' }} alt=""></img>
-          dcgx.
-        </a> */}
-      </div>
+      <Logo />
 
       <ul class="md:flex justify-between hidden">
         {/* <NavbarLink href="/">Inicio</NavbarLink>

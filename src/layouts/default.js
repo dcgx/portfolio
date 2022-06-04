@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import { Navbar, SocialSide, BottomNavigation } from '@components'
 
-const Layout = ({ children }) => {
+const DefaultLayout = ({ children }) => {
   return (
     <>
       <Head>
@@ -95,4 +95,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default DefaultLayout

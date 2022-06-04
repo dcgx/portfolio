@@ -1,7 +1,12 @@
-import '@styles/style.scss'
-import { ThemeProvider } from 'next-themes'
-import DefaultLayout from '@layouts/default'
 import { useState, useEffect } from 'react'
+
+import '@styles/style.scss'
+
+// import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'styled-components'
+import DefaultLayout from '@layouts/default'
+import GlobalStyle from '../styles/globals'
+import theme from '../themes/light'
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout
@@ -18,8 +23,9 @@ function MyApp({ Component, pageProps }) {
     return <></>
   } else {
     return (
-      <ThemeProvider attribute="class">
+      <ThemeProvider theme={theme}>
         <Layout>
+          <GlobalStyle />
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>

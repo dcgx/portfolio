@@ -3,6 +3,7 @@
 @import '~tailwindcss/utilities';
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -106,51 +107,4 @@ a.socialLink {
   }
 }
 
-.logo {
-  div {
-    border: 2px solid #000;
-    font-weight: 600;
-    padding: 1.2rem;
-    width: 20px;
-    height: 20px;
-    border-radius: 1999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-  }
-}
-
 /*********/
-
-.articles {
-  max-width: 1120px;
-  margin: 20px auto;
-  margin-bottom: 60px;
-  article {
-    cursor: pointer;
-    background-color: #fff;
-    padding: 20px 17px;
-    border-radius: 10px;
-    &:hover {
-      outline: 1.7px solid #2a4365;
-      transition: outline 0.1s ease-in-out;
-    }
-  }
-  .article-skills {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-top: 10px;
-    li {
-      margin-right: 10px;
-      border-radius: 10px;
-      padding: 5px;
-      font-size: 14px;
-      color: #2a4365;
-      background: #bee3f8;
-      font-weight: 500;
-    }
-  }
-}

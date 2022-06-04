@@ -1,5 +1,8 @@
+import jobs from './jobs'
+
 module.exports = {
   email: 'email@email.com',
+  jobs,
 
   socialMedia: [
     {
