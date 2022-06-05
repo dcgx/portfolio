@@ -11,6 +11,7 @@ import theme from '../themes/light'
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout
   const [showChild, setShowChild] = useState(false)
+
   useEffect(() => {
     setShowChild(true)
   }, [])
@@ -21,11 +22,18 @@ function MyApp({ Component, pageProps }) {
 
   if (typeof window === 'undefined') {
     return <></>
+  } else if (Component.name === 'Projects' || Component.name === 'Project') {
+    return (
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    )
   } else {
     return (
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <Layout>
-          <GlobalStyle />
           <Component {...pageProps} />
         </Layout>
       </ThemeProvider>

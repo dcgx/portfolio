@@ -1,7 +1,4 @@
 import { Button } from '@components'
-import { useTheme } from 'next-themes'
-import { FaUniversity } from 'react-icons/fa'
-import { MdWorkspaces } from 'react-icons/md'
 import { Skill } from '../components/Skill/Skill'
 
 export default function About({ projects }) {

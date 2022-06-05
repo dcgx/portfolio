@@ -1,15 +1,12 @@
-import { Hero, About, Jobs, Featured, Projects, Articles } from '@components'
+import { Hero, About, Jobs, Projects } from '@components'
 
 export default function Home({ projects }) {
   return (
     <main>
       <Hero />
       <Jobs />
-      <Featured />
+      <Projects />
       <About />
-
-      {/* <Projects /> */}
-      {/* <Articles /> */}
     </main>
   )
 }

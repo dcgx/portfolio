@@ -1,8 +1,10 @@
 import jobs from './jobs'
+import projects from './projects'
 
 module.exports = {
   email: 'email@email.com',
   jobs,
+  projects,
 
   socialMedia: [
     {

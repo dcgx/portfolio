@@ -29,6 +29,15 @@ const Jobs = () => {
                     </a>
                   </span>
                 </h3>
+
+                <figure className="border rounded-full p-1 absolute right-0 top-0">
+                  <img
+                    width={35}
+                    height={35}
+                    src="https://pckz.cl/wp-content/uploads/2020/04/icon-pckz-web-1.gif"
+                  ></img>
+                </figure>
+
                 <p className="range">{job.range}</p>
                 <List>
                   {job.descriptions.map((description) => {
