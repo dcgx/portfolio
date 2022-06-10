@@ -5,7 +5,9 @@ import { Logo } from '@components'
 const StyledNavbar = styled.nav`
   width: 100%;
   padding: 0;
+  top: 0;
   position: sticky;
+  background-color: #fff;
   .inner {
     width: 100%;
     margin: 0 auto;

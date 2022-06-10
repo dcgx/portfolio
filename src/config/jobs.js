@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Software Engineer',
+    title: 'Software Developer',
     company: 'PCKZ',
     companyUrl: 'http://pckz.cl/',
     range: 'Aug. 2021 - Jun. 2022',

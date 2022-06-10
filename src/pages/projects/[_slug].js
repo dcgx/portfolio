@@ -1,32 +1,75 @@
 import { useRouter } from 'next/router'
+import styled from 'styled-components'
 import Navbar from '../../layouts/components/navbar'
+
+const StyledProject = styled.article`
+  border: 1px solid red;
+  max-width: 1920px;
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const StyledProjectGallery = styled.div`
+  border: 1px solid blue;
+
+  .project-thubmnail {
+    margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-flow: row;
+    overflow: auto;
+    .project-thubmnail {
+      width: 96%;
+      position: relative;
+      display: block;
+      flex-shrink: 0;
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+`
+
+const StyledProjectInfo = styled.div`
+  border: 1px solid green;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  margin: 0 20px;
+`
 
 export default function Project() {
   return (
     <>
       <Navbar />
-      <div className="grid grid-cols-3">
-        <div className="col-span-2 mx-20">
-          <figure className="mb-5">
-            <img
-              className="rounded-sm"
-              src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"
-            ></img>
-          </figure>
-          <figure className="mb-5">
-            <img
-              className="rounded-sm"
-              src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"
-            ></img>
-          </figure>
-          <figure className="mb-5">
-            <img
-              className="rounded-sm"
-              src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"
-            ></img>
-          </figure>
-        </div>
-        <div className="sticky top-5 mr-10 h-fit">
+      <StyledProject>
+        <StyledProjectGallery>
+          <div className="project-thubmnail">
+            <figure>
+              <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
+            </figure>
+          </div>
+          <div className="project-thubmnail">
+            <figure>
+              <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
+            </figure>
+          </div>
+          <div className="project-thubmnail">
+            <figure>
+              <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
+            </figure>
+          </div>
+        </StyledProjectGallery>
+        <StyledProjectInfo>
           <h1 class="text-5xl font-bold text-center font-serif pb-10">
             Ambar.pet, redesign pet and veterinary system
           </h1>
@@ -126,8 +169,17 @@ export default function Project() {
               </div>
             </div>
           </div>
+        </StyledProjectInfo>
+      </StyledProject>
+      {/* 
+      <div className="grid grid-cols-3">
+        <div className="col-span-2 mx-20">
+          
         </div>
-      </div>
+        <div className="sticky top-5 mr-10 h-fit">
+         
+        </div>
+      </div> */}
     </>
   )
 }

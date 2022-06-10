@@ -13,7 +13,9 @@ const Projects = () => {
     if (expandedProject === projectId) {
       router.push(`projects/${projectId}`)
     }
-    setExpandedProject(projectId)
+    setTimeout(() => {
+      setExpandedProject(projectId)
+    }, 10)
   }
 
   return (
@@ -39,11 +41,13 @@ const Projects = () => {
             <AccordionItem
               onClick={() => handleClickProject(index)}
               expanded={expandedProject === index}
+              image={project.cover}
+              imageSm={project.coverSm}
             >
               <h2 className="font-extrabold text-4xl text-white">{project.title}</h2>
               <div className="mt-2">
                 {project.techs.map((tech) => {
-                  return <Badge>{tech}</Badge>
+                  return <Badge color={tech.color}>{tech.label}</Badge>
                 })}
               </div>
               <p className="text-zinc-200 mt-3">{project.description}</p>

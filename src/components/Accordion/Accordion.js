@@ -6,7 +6,12 @@ const StyledAccordion = styled.div`
   gap: 1rem;
   margin: 0 auto;
   max-width: var(--max-w-screen-lg);
-  border: 1px solid red;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    max-width: 1400px;
+    min-height: 100vh;
+  }
 `
 
 const Accordion = ({ children }) => {

@@ -22,6 +22,10 @@ const StyledAside = styled.footer`
       margin-bottom: 12px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const Aside = () => {
