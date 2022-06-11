@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useProjects } from '../../hooks/useProjects'
 import Navbar from '../../layouts/components/navbar'
 
 const StyledProjects = styled.section`
@@ -27,21 +28,31 @@ const StyledProjects = styled.section`
 `
 
 export default function Projects() {
+  const { projects, isLoading } = useProjects()
+
   return (
     <>
       <Navbar />
-      <StyledProjects>
-        <article>
-          <a href="/project/2"></a>
-          <figure>
-            <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
-          </figure>
-          <div className="project-info">
-            <time className="date">Enero 2020</time>
-            <h3 className="title">Project 1</h3>
-          </div>
-        </article>
-      </StyledProjects>
+      {isLoading ? (
+        <div>Loading..</div>
+      ) : (
+        <StyledProjects>
+          {projects.map((project) => {
+            return (
+              <article>
+                <a href="/project/2"></a>
+                <figure>
+                  <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
+                </figure>
+                <div className="project-info">
+                  <time className="date">Enero 2020</time>
+                  <h3 className="title">{project.name}</h3>
+                </div>
+              </article>
+            )
+          })}
+        </StyledProjects>
+      )}
     </>
   )
 }
