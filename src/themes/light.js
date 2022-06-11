@@ -1,7 +1,10 @@
 import common from './common'
 
 const lightTheme = {
-  ...common
+  ...common,
+  bg: {
+    default: '#FFFFFF'
+  }
 }
 
 export default lightTheme

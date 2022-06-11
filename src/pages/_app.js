@@ -3,9 +3,11 @@ import { useState, useEffect } from 'react'
 import '@styles/style.css'
 
 import { ThemeProvider } from 'styled-components'
+import ThemeContext from '../contexts/theme'
 import DefaultLayout from '@layouts/default'
 import GlobalStyle from '../styles/globals'
-import theme from '../themes/light'
+import lightTheme from '../themes/light'
+import { useTheme } from '../hooks/useTheme'
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout
@@ -23,19 +25,19 @@ function MyApp({ Component, pageProps }) {
     return <></>
   } else if (Component.name === 'Projects' || Component.name === 'Project') {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeContext>
         <GlobalStyle />
         <Component {...pageProps} />
-      </ThemeProvider>
+      </ThemeContext>
     )
   } else {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeContext>
         <GlobalStyle />
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </ThemeProvider>
+      </ThemeContext>
     )
   }
 }

@@ -1,5 +1,6 @@
 import { Link } from '@components'
 import styled from 'styled-components'
+import { useTheme } from '../../hooks/useTheme'
 
 const StyledHeroSection = styled.section`
   height: 100vh;
@@ -28,6 +29,7 @@ const StyledHeroSection = styled.section`
 `
 
 const Hero = () => {
+  const [_, toggleTheme] = useTheme()
   return (
     <StyledHeroSection>
       <div className="info">
@@ -41,6 +43,7 @@ const Hero = () => {
         <Link className="mt-4" href="/resume.pdf" target="_blank">
           Download CV
         </Link>
+        <button onClick={toggleTheme}>Toggle Theme</button>
       </div>
       <figure>
         <img src="https://images.emojiterra.com/google/android-10/512px/1f468-1f4bb.png"></img>

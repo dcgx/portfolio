@@ -1,7 +1,10 @@
 import common from './common'
 
 const darkTheme = {
-  ...common
+  ...common,
+  bg: {
+    default: '#120e26'
+  }
 }
 
 export default darkTheme
