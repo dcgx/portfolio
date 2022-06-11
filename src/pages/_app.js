@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 
-import '@styles/style.scss'
+import '@styles/style.css'
 
-// import { ThemeProvider } from 'next-themes'
 import { ThemeProvider } from 'styled-components'
 import DefaultLayout from '@layouts/default'
 import GlobalStyle from '../styles/globals'

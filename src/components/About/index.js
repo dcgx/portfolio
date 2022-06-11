@@ -1,7 +1,4 @@
-import { useTheme } from 'next-themes'
 const About = () => {
-  const { theme } = useTheme()
-
   return (
     <section className="mt-10">
       <h2 className="text-center font-sans font-bold text-xl text-purple-800 mb-3">

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+h2 {
+  font-weight: 600;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+  line-height: 1;
+  font-size: 3rem;
+}
+
+p {
+  color: rgb(75 85 99 / 1);
+}
