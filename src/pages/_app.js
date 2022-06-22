@@ -25,19 +25,19 @@ function MyApp({ Component, pageProps }) {
     return <></>
   } else if (Component.name === 'Projects' || Component.name === 'Project') {
     return (
-      <ThemeContext>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         <Component {...pageProps} />
-      </ThemeContext>
+      </ThemeProvider>
     )
   } else {
     return (
-      <ThemeContext>
+      <ThemeProvider theme={lightTheme}>
         <GlobalStyle />
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </ThemeContext>
+      </ThemeProvider>
     )
   }
 }

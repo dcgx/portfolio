@@ -3,13 +3,19 @@ import { useTheme } from '../hooks/useTheme'
 
 import lightTheme from '../themes/light'
 import darkTheme from '../themes/dark'
+import { createContext } from 'react'
 
-const ThemeContext = ({ children }) => {
-  const [theme, _] = useTheme()
+export const ThemeContext = createContext({
+  theme: '',
+  toggleTheme: () => {}
+})
 
-  const themeMode = theme === 'dark' ? darkTheme : lightTheme
+// const ThemeContext = ({ children }) => {
+//   const [theme, _] = useTheme()
 
-  return <ThemeProvider theme={themeMode}>{children}</ThemeProvider>
-}
+//   const themeMode = theme === 'dark' ? darkTheme : lightTheme
 
-export default ThemeContext
+//   return <ThemeProvider theme={themeMode}>{children}</ThemeProvider>
+// }
+
+// export default ThemeContext

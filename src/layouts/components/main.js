@@ -10,6 +10,10 @@ const StyledMain = styled.main`
     padding-left: 0;
     margin: 0 10px;
   }
+
+  @media only screen and (min-width: 1350px) {
+    margin: 0 30px;
+  }
 `
 
 const MainContainer = ({ id, children, className }) => {

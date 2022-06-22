@@ -1,5 +1,5 @@
-import { collection, getDocs, query, where } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
+import { collection, getDocs, query, where } from 'firebase/firestore'
 import { firestore } from '../../firebase'
 
 export function useProjects() {
@@ -14,7 +14,7 @@ export function useProjects() {
   const projectsCollection = collection(firestore, 'projects')
 
   const getProjects = async () => {
-    const projectsQuery = query(projectsCollection, where('enabled', '==', true))
+    const projectsQuery = query(projectsCollection, where('isEnabled', '==', true))
     const querySnapshot = await getDocs(projectsQuery)
     const result = []
 
