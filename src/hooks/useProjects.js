@@ -14,7 +14,7 @@ export function useProjects() {
   const projectsCollection = collection(firestore, 'projects')
 
   const getProjects = async () => {
-    const projectsQuery = query(projectsCollection, where('enabled', '==', true))
+    const projectsQuery = query(projectsCollection, where('isEnabled', '==', true))
     const querySnapshot = await getDocs(projectsQuery)
     const result = []
 

@@ -29,7 +29,7 @@ const StyledProjects = styled.section`
 
 export default function Projects() {
   const { projects, isLoading } = useProjects()
-
+  console.log(projects)
   return (
     <>
       <Navbar />
