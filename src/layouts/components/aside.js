@@ -3,6 +3,7 @@ import styled from 'styled-components'
 //w-48 fixed bottom-0 left-0
 
 import { BsGithub, BsTwitter, BsLinkedin, BsBriefcase } from 'react-icons/bs'
+import { BiHomeAlt } from 'react-icons/bi'
 
 const StyledAside = styled.footer`
   width: var(--aside-width);
@@ -61,19 +62,19 @@ const Aside = () => {
     <StyledAside>
       <div className="inner ">
         <div className="nav-links">
-          <a>
-            <BsBriefcase size={25} />
-            <span>Sobre mí</span>
+          <a href="/">
+            <BiHomeAlt size={25} />
+            <span>Inicio</span>
           </a>
-          <a>
+          <a href="/experience">
             <BsBriefcase size={25} />
             <span>Experiencia</span>
           </a>
-          <a>
+          <a href="/projects">
             <BsBriefcase size={25} />
             <span>Portafolio</span>
           </a>
-          <a>
+          <a href="/education">
             <BsBriefcase size={25} />
             <span>Educación</span>
           </a>

@@ -1,6 +1,5 @@
 import { Link } from '@components'
 import styled from 'styled-components'
-import { useTheme } from '../../hooks/useTheme'
 
 const StyledHeroSection = styled.section`
   height: 100vh;
@@ -29,7 +28,6 @@ const StyledHeroSection = styled.section`
 `
 
 const Hero = () => {
-  const [_, toggleTheme] = useTheme()
   return (
     <StyledHeroSection>
       <div className="info">
