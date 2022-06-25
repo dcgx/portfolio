@@ -1,45 +1,94 @@
-import { Button } from '@components'
+import { Link, Button } from '@components'
+import styled from 'styled-components'
+
+const StyledAbout = styled.section`
+  h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 2.2rem;
+  }
+`
 
 export default function About({ projects }) {
   return (
-    <main>
-      <div className="h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-5 md:px-0 max-w-screen-xl mx-auto">
-        <div>
-          <p className="font-sans font-light text-lg mb-4 md:mb-14 text-gray-900 dark:text-gray-300">
-            Soy un desarrollador de software especializado en construir excepcionales sitios web y
-            con más de <strong>1 año de experiencia</strong> agregando valor a los procesos de
-            negocios. Principalmente enfocado en el desarrollo web como Full-stack developer, me
-            inicié con Laravel y Vue.js y aún sigo con estas tecnologías. <br /> Tengo conocimiento
-            en HTML, CSS, JavaScript, Bootstrap, Tailwind React, Node.js y Flutter
+    <StyledAbout>
+      <div>
+        <h1>Here is my story</h1>
+        <section>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <ul className="grid grid-cols-2">
-            {/* <Skill
-              image="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-              name="JavaScript (ES6+)"
-            ></Skill>
-            <Skill
-              image="http://assets.stickpng.com/thumbs/58481791cef1014c0b5e4994.png"
-              name="PHP"
-            ></Skill>
-            <Skill
-              image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
-              name="Vue.js"
-            ></Skill>
-            <Skill
-              image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
-              name="Laravel"
-            ></Skill>
-            <Skill
-              image="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAt1BMVEX///9B0P1A0P0JWp0fvP0OUZkszf36/v8AU5pa1f3b9v6IosSV4v4Auf153P5x2/4AVpscv/8fwv/m+P/w+/9J0v0PSZK26/6l5/71/f981P4PSpMATpdU1P3N8f+/7v6H3/6U2/5sz/5Xyf00puEkltXj7PMejc2btdFkj7rL8f6d5f6D1v5Jzf1v0P4/xv3N2+gZYqHm7fQmaKQ6c6uazOoAP45BeK2Rr81OgLKlvdZnkby5y94p6fsnAAAE00lEQVR4nO3dCVvaQBAG4BDDWQ8Ih1LBo9Vqta09bbX+/99VQtASyO5OJsSdGeb7ATz7PvMthCxHEGg0Go1Go9FoNBqNhkma+PheOiy70zYu0/bA99pB2W3UcAnDvu+1g6JAI3AoHSh+ggqkkRLAju+1g4IG1qQDtaJEohU1+hrCgeInKB4o/klG9yCRlKjoie+1g1KiouKBWlESUaARKH8PSgeGN77XDkqJCYoHakVJRCuqQOIpATz1vXZQFKhA4lGgAomnBPDQ99pBUaACiUeBCiQeBZqBR77XDgr++Ew6UPwExQPFV1Q8UHxFxQPFV7TWuPW9dlBKVFQ4UPwEtwC463vtoOgEt3iCCiQRBW4x8Mz32kFRoBmoFSURBSqQeBSoQOIpAdz3vXZQFKhA4lGgAolHgWbgge+1g6JAM3CfxS+rlZmgeKD1gccddDb6i3TVAacNbDZajcoqOmiHyGz22as64JQ/0PrAgyEauNEriOomKAA4tj1wHw+kUtG2dYL9Go0JdhphNcAO1rdhYBCcIomNtrWidIBBcIgihpUBK7iKxxAdFT0hNEEc0VHRkwYtYEIsBnRUtMQEK3ujeVRoig7gDUFgMWJo34M35Cqa5hZcVMcET4kC4cRwan1jWgJY+c0e2OVbOLVO8JDsBKFE1kAI0VHREsBXuh955iCGQ+ZAFzEcWit6RLyiaWxER0V5AINg30h0AM9j7Fv61z4TODAQHXvwfC9CEl//0CN/ig7gp70oimLMfQsP53LNvCk6/lHjPAFGUa/4FP0cPK4TYUAE0de5XLuxCnRXdEEsVlRvR8crRYUDZylC9Hg2Pm6H4IpmgUWIXo+Om9MXouMPJ1aBUfSZA3BpimForejbNSCU6P3jG4OU6KhoHhBG9A6cn/05K5oPhBBJfHxjfjiGArqJBCaYZEa0Ar8YgS4iEWAQ9K2/BW8DRtGd5fKGDNAeO9BGJLEH3XnnAEZ7d4bXfiYTdAKNRDlAA1FKRRdZJzIBvgcC14mSKrpI9uaNQGCWKK6iq0QmEywK/H/zhgewWRz4TOQBREzwmchkD96hgLMw+ULGGDfB+RR5THAQY4W9i52vvlcPyhhJnAG7XSZE1EacAWeZ8CAOEFsxBe7siJ1i76K7EDLZi82CxOcJJkQmUyx2WbMEnBFbH3yvHpQixAyQT1HhlzYrwBnxG48pQi9P14DJXuRBhBU1XgcmReVBhEwxvuzmCAUVNb48rvMmOm7XxJejet1A5FJUKzEFmogCpphUNE0rn/jd9+JhMR4/9RYT5E80HALHS0BjUZkQc6eYBZqIP/gS46vjejb5ReVCXCtq72pUhwj5FHXlQ1HxKrCVW9J0ihv91YTqkpniyh4085K0fvKbYmaCdt6cyGWKL8QlYNfJS4nWLzjQyeJDwi9AGC8tKpMpzokLoLucWSKLX7dJv42QAIvxeBGjq1FxHivir3sMb078zYT451g88XqCJnIp6vUWTHGEJj5wIeKLymaKJYi+1w4Mvqj1B99rB6bMXvS9dmAe0UVlM0U8kc8U8Xvxo++1A/OIf+lnQ6zrFI2ZsCHi9+Jf32sHBv+MymeK8olP6KJO2BQV/3TDhfiEftHgQ5y0kLlnQ3yDDpOPwGk0Go1Go9FoNBoNg/wD3zy1H66aaH0AAAAASUVORK5CYII="
-              name="Flutter"
-            ></Skill> */}
-          </ul>
-
-          <div className="text-center">
-            <Button className="mt-10">Descargar CV</Button>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div className="grid grid-cols-3">
+            <div className="col-span-1">
+              <img
+                width={210}
+                src="https://www.jaime00.me/static/media/profile_image.48d9c230fc97d28cf831.png"
+              />
+            </div>
+            <div className="col-span-2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <h2 className="my-5">Skill Experience</h2>
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,.</p>
+
+          <div className="flex items-center my-2">
+            <span className="flex-none">Laravel</span>
+            <span className="border-t border-dashed borde-gray-200 w-full"></span>
+            <span className="flex-none">2021 - now (2 years)</span>
+          </div>
+
+          <div className="flex items-center my-2">
+            <span className="flex-none">Laravel</span>
+            <span className="border-t border-dashed borde-gray-200 w-full"></span>
+            <span className="flex-none">2021 - now (2 years)</span>
+          </div>
+        </section>
+
+        <Link className="mt-10" href="/resume.pdf" target="_blank">
+          Download CV
+        </Link>
       </div>
-    </main>
+
+      <div className="flex  items-center justify-between border border-gray-500 my-20 py-5">
+        <span>Consulta mi Curriculum</span>
+
+        <Button>Ver Linkedin</Button>
+      </div>
+    </StyledAbout>
   )
 }

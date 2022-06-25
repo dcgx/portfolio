@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 //w-48 fixed bottom-0 left-0
 
-import { BsGithub, BsTwitter, BsLinkedin, BsBriefcase } from 'react-icons/bs'
+import { BsPerson, BsGithub, BsTwitter, BsLinkedin, BsBriefcase } from 'react-icons/bs'
 import { BiHomeAlt } from 'react-icons/bi'
+import { GrProjects } from 'react-icons/gr'
+import { MdOutlineGrade } from 'react-icons/md'
 
-const StyledAside = styled.footer`
+const StyledAside = styled.aside`
   width: var(--aside-width);
   position: fixed;
   bottom: 0;
@@ -66,16 +68,17 @@ const Aside = () => {
             <BiHomeAlt size={25} />
             <span>Inicio</span>
           </a>
-          <a href="/experience">
-            <BsBriefcase size={25} />
-            <span>Experiencia</span>
+          <a href="/about">
+            <BsPerson size={25} />
+            <span>Sobre mí</span>
           </a>
+
           <a href="/projects">
-            <BsBriefcase size={25} />
+            <GrProjects />
             <span>Portafolio</span>
           </a>
           <a href="/education">
-            <BsBriefcase size={25} />
+            <MdOutlineGrade />
             <span>Educación</span>
           </a>
         </div>

@@ -2,7 +2,7 @@ import { Link } from '@components'
 import styled from 'styled-components'
 
 const StyledHeroSection = styled.section`
-  height: 100vh;
+  height: calc(100vh - 200px);
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
@@ -34,13 +34,12 @@ const Hero = () => {
         <h1 className="text-6xl font-semibold text-zinc-700">
           Software Engineer, Self-taught Developer
         </h1>
-        <p className="text-2xl mt-5">
+        <p className="text-3xl text-zinc-500 font-light mt-5">
           Hi 👋, I'am Diego, a software developer and web developer from Chile. I have worked a web
           developer specialized in frontend for more 1 year.
         </p>
         <div className="flex items-center mt-4">
-          <a>diego@dcgx.dev</a>
-          <Link className="mx-4" href="/resume.pdf" target="_blank">
+          <Link href="/resume.pdf" target="_blank">
             Download CV
           </Link>
         </div>

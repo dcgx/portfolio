@@ -12,7 +12,7 @@ const StyledMain = styled.main`
   }
 
   @media only screen and (min-width: 1350px) {
-    margin: 0 30px;
+    margin: 30px auto;
   }
 `
 

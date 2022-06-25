@@ -40,9 +40,9 @@ export default function Projects() {
           {projects.map((project) => {
             return (
               <article>
-                <a href="/project/2"></a>
+                <a href={`/project/${project.slug}`}></a>
                 <figure>
-                  <img src="https://i0.wp.com/evilnapsis.com/wp-content/uploads/2015/06/adminlt2.png"></img>
+                  <img src={project.images[0]}></img>
                 </figure>
                 <div className="project-info">
                   <time className="date">Enero 2020</time>

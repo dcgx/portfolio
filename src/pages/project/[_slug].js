@@ -5,7 +5,7 @@ import Navbar from '../../layouts/components/navbar'
 const StyledProject = styled.article`
   border: 1px solid red;
   max-width: 1920px;
-  margin: 0 20px;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 0.8fr;
 

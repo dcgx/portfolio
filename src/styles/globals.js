@@ -16,6 +16,21 @@ const GlobalStyle = createGlobalStyle`
             'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
             'Segoe UI Symbol', 'Noto Color Emoji';
     }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    h6{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    time {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 /* 
     body::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
